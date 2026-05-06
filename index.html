@@ -185,6 +185,7 @@ border:none;
 border-radius:10px;
 font-size:18px;
 font-weight:600;
+cursor:pointer;
 }
 
 footer{
@@ -352,17 +353,21 @@ Demande de Devis Gratuit
 
 <div class="form">
 
-<form>
+<form action="https://formsubmit.co/ecosolution62@gmail.com" method="POST">
 
-<input type="text" placeholder="Nom">
+<input type="text" name="Nom" placeholder="Nom" required>
 
-<input type="tel" placeholder="Téléphone">
+<input type="tel" name="Téléphone" placeholder="Téléphone" required>
 
-<input type="email" placeholder="Email">
+<input type="email" name="Email" placeholder="Email" required>
 
-<textarea rows="5" placeholder="Décrivez votre besoin"></textarea>
+<textarea name="Message" rows="5" placeholder="Décrivez votre besoin" required></textarea>
 
-<button>
+<input type="hidden" name="_captcha" value="false">
+
+<input type="hidden" name="_subject" value="Nouvelle demande Ecosolution62">
+
+<button type="submit">
 Envoyer la demande
 </button>
 
